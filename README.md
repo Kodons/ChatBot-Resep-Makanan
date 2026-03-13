@@ -19,4 +19,4 @@ Proyek ini dibangun menggunakan arsitektur *Client-Server* dengan teknologi mode
 * **Multer** - *Middleware* untuk menangani *multipart/form-data*, digunakan khusus untuk mengelola unggahan *file* gambar dan media dari pengguna.
 
 ### Layanan AI & Integrasi
-* **Google Gemini AI (1.5 Flash)** - Model *Large Language Model* (LLM) multimodal yang sangat cepat. Digunakan sebagai "otak" utama bot untuk memproses teks (NLP) dan menganalisis gambar masakan/bahan makanan secara simultan.
+* **Google Gemini AI (2.5 Flash)** - Model *Large Language Model* (LLM) multimodal yang sangat cepat. Digunakan sebagai "otak" utama bot untuk memproses teks (NLP) dan menganalisis gambar masakan/bahan makanan secara simultan.
