@@ -8,16 +8,13 @@ const handleChat = async (req, res) => {
   let fileType = null;
 
   try {
-    // Siapkan URL file untuk dikembalikan ke frontend
     if (uploadedFile) {
       fileUrl = `http://localhost:3001/uploads/${uploadedFile.filename}`;
       fileType = uploadedFile.mimetype;
     }
 
-    // Panggil Service AI
     const botReply = await aiService.getChefBotResponse(userMessage, uploadedFile);
 
-    // Kirim balasan JSON
     res.json({ 
       reply: botReply,
       fileUrl: fileUrl,

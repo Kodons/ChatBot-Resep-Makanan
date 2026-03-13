@@ -8,21 +8,17 @@ const getChefBotResponse = async (userMessage, uploadedFile) => {
   });
 
   const promptParts = [];
-
-  // Susun prompt berdasarkan input
   if (userMessage) {
     promptParts.push(userMessage);
   } else if (uploadedFile) {
     promptParts.push("Tolong analisis bahan atau makanan apa ini, dan berikan ide resepnya.");
   }
 
-  // Sisipkan file jika ada
   if (uploadedFile) {
     const filePart = fileToGenerativePart(uploadedFile.path, uploadedFile.mimetype);
     promptParts.push(filePart);
   }
 
-  // Eksekusi ke Gemini AI
   const result = await model.generateContent(promptParts);
   return result.response.text();
 };
