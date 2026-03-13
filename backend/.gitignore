@@ -1,1 +1,47 @@
+# =========================================
+# 1. ENVIRONMENT VARIABLES (Keamanan)
+# =========================================
 .env
+.env.local
+.env.development
+.env.test
+.env.production
+*.pem
+
+# =========================================
+# 2. DEPENDENCIES (Ukuran File Raksasa)
+# =========================================
+node_modules/
+.pnp/
+.pnp.js
+
+# =========================================
+# 3. FOLDER UPLOAD & LOGS (Data Dinamis/User)
+# =========================================
+# Jangan unggah foto/audio hasil testing ke GitHub!
+uploads/
+/recipe-bot-backend/uploads/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================
+# 4. BUILD OUTPUT (Hasil Compile Frontend)
+# =========================================
+# Folder ini di-generate otomatis oleh Vite, tidak perlu masuk GitHub
+dist/
+dist-ssr/
+build/
+
+# =========================================
+# 5. OS & EDITOR SPECIFIC (File Sampah Sistem)
+# =========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
